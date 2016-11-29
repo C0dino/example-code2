@@ -3,11 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(spression(10))
+	var y int
+	fmt.Scan(y)
+	fmt.Println(spression(y))
 }
 
 func spression(x int) (int, bool) {
-	return x / 2, true
+	
+	return x % 2, true
 }
 
 /*
