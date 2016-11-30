@@ -2,23 +2,20 @@ package main
 
 import "fmt"
 
-func main() {
-
-	x := []int{25, 2, 3, 4, -3}
-	yeti(x...)
-	fmt.Println(x)
-}
-
-func yeti(n ...int) {
-	var max, min int
+func yeti(n ...int) int {
+	var max int
 	for _, v := range n {
 		if v > max {
 			max = v
-		} else if v < min {
-			min = v
 		}
-		fmt.Println(max, min)
 	}
+	return max
+}
+
+func main() {
+
+	greatest := yeti(25, 2, 3, 4, -3)
+	fmt.Println(greatest)
 }
 
 /*
