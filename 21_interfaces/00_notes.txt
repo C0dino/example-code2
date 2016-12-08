@@ -1,0 +1,9 @@
+(1)
+type people []string
+studygroup := people{"zero", "john", "Al", "Jenny"}
+
+(2)
+S:= []string{"zero", "john", "Al", "Jenny"}
+
+(3)
+n := []int{7, 4, 8, 2, 9, 19, 12, 32, 3} 
