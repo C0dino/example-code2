@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 type circle struct {
@@ -22,5 +23,5 @@ func info(s shape) {
 
 func main() {
 	c := circle{5}
-	info(c)
+	info(&c)
 }
