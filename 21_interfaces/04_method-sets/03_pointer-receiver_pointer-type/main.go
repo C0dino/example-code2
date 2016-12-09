@@ -14,7 +14,7 @@ type shape interface {
 }
 
 func (c *circle) area() float64 {
-	return math.pi * c.radius * c.radius
+	return math.Pi * c.radius * c.radius
 }
 
 func info(s shape) {
